@@ -137,3 +137,9 @@ you might have to add a limit, like so:
 {% endfor %}
 {% endif %}
 ```
+
+## More Examples
+For more examples, check out the repo for
+[codeinpink.github.io](https://github.com/codeinpink/codeinpink.github.io)!
+The source code is in the `source` branch and the generated content is
+in the `master` branch.
