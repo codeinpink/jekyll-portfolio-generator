@@ -53,6 +53,9 @@ for the project pages.
 </ul>
 ```
 
+The project page will have access to any keys you use in your project data files,
+so to access them you just need to use the `page` variable (e.g. `{{ page.KEY }}`).
+
 ### Data Files
 This plugin assumes that the project data files will be inside a `projects` directory
 inside of the `_data` directory. Each project **must** have its own file, and each
@@ -89,7 +92,8 @@ you can access your projects like this:
 
 This will show your projects with the most-recent being first (if you include the date
 in your project files). I recommend always using the `get_projects_from_files` filter.
-Without it, you'll have to do this:
+Without it, you'll have to do this, and the projects won't be in reverse chronological
+order:
 
 ```
 {% for project_file in site.data.projects %}
@@ -139,7 +143,6 @@ you might have to add a limit, like so:
 ```
 
 ## More Examples
-For more examples, check out the repo for
-[codeinpink.github.io](https://github.com/codeinpink/codeinpink.github.io)!
-The source code is in the `source` branch and the generated content is
-in the `master` branch.
+For more examples, check out the [repo](https://github.com/codeinpink/codeinpink.github.io)
+for [codeinpink.github.io](http://codeinpink.github.io/)! The source code is in
+the `source` branch and the generated content is in the `master` branch.
