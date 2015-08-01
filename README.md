@@ -15,7 +15,7 @@ to `portfolio`.
 each project. Defaults to `false`.
 
 * `related_project_keys` - An array of project keys that will be used to compute
-generated projects. This is **required** *if* you want to generate related projects.
+related projects. This is **required** *if* you want to generate related projects.
 There is no default.
 
 * `related_min_common` - As a decimal, the minimum percentage of keys that should
@@ -117,9 +117,9 @@ Assuming this is in the `project.html` layout file:
 {% if page.related_projects.size > 0 %}
 <h3>Related Projects</h3>
 {% for project in page.related_projects %}
-<div class="col-sm-4">
-    <a href="/{{ project.dir }} "><img src="{{ project.image.url }}" alt="{{ project.image.alt }}" title="{{ project.image.title }}"></a>
-</div>
+<a href="/{{ project.dir }} ">
+    <img src="{{ project.image.url }}" alt="{{ project.image.alt }}" title="{{ project.image.title }}">
+</a>
 {% endfor %}
 {% endif %}
 ```
@@ -131,9 +131,9 @@ you might have to add a limit, like so:
 {% if page.related_projects.size > 0 %}
 <h3>Related Projects</h3>
 {% for project in page.related_projects limit:3 %}
-<div class="col-sm-4">
-    <a href="/{{ project.dir }} "><img src="{{ project.image.url }}" alt="{{ project.image.alt }}" title="{{ project.image.title }}"></a>
-</div>
+<a href="/{{ project.dir }} ">
+    <img src="{{ project.image.url }}" alt="{{ project.image.alt }}" title="{{ project.image.title }}">
+</a>
 {% endfor %}
 {% endif %}
 ```
