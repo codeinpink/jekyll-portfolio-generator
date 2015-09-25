@@ -74,7 +74,7 @@ technology:
 ```
 
 ## Using Projects in Templates
-If you want to include your projects in your `index.html` or `portfolio.index`,
+If you want to include your projects in your `index.html` or `portfolio.html`,
 you can access your projects like this:
 
 ```
